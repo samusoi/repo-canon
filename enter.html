@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=waRObU3FRQJ60JyC-edlxELj_jCYEk3v2SVHUadhW_-xj763Neg_SuMTsfAHxOwUSszwvQKRDhQTs0uLwJ7Kr_MtOD09HKbTpkZu_ai2WbY" charset="UTF-8"></script>
+    
+    <link rel="stylesheet" href="js/script.js">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      
+    </style>
+
+    <title>Canon</title>
+    
+</head>
+<header>
+        <img id="logo" src="img/canon-logo.jpg" alt="">
+        <ul id="menu" class="nav nav-tabs justify-content-center">
+            <li class="nav-item" >
+              <a class="nav-link" href="canon.html">О компании</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="products.html">Продукты</a>
+            </li>
+            
+            <li class="nav-item"  >
+                <a class="nav-link"  href="foto.html" class="">Галерея</a>
+            </li>
+            <li  class="nav-item" >
+              <a class="nav-link" href="news.html" class="">Новости и события</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link"  href="reviews.html" class="">Отзывы</a>
+            </li>
+            
+            <li class="nav-item" > 
+                <a class="nav-link" href="help.html" class="">Поддержка</a>
+            </li>
+            <li class="nav-item"  >
+                <a class="nav-link active"  aria-current="page" href="enter.html" class="">Вход</a>
+            </li>
+            
+            
+                <div class="container-fluid">
+                  <form id="search" class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button  class="btn btn-outline-light" type="submit">Search</button>
+                    
+                  </form>
+                </div>
+              
+          </ul>   
+    </header> 
+<body>
+   
+
+    <section class="container">
+      <h1 class="zag"><b>Вход</b></h1>
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><b>Логин</b></label>
+          <input  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"><b>Пароль</b></label>
+          <input  type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+          <h6 id="h6" >Нет аккаунта? <a href="" data-bs-toggle="modal" data-bs-target="#modal-card">Зарегистрируйтесь</a></h6>
+          
+        </div>
+       <a href="canon.html"><button id="button" type="button" class="btn btn-primary">Войти</button></a> 
+      </form>
+
+
+      <div class="modal fade" id="modal-card" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div id="img-content" class="modal-header">
+              <h1  class="modal-title fs-2" id="exampleModalLabel"><img id="canon-logo-wind" src="img/canon-logo.jpg" alt=""></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <h3 id="zagolovok-modal-window"><b>Регистрация</b></h3>
+              <div class="pad" class="mb-3">
+                <input placeholder="Имя пользователя" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="pad" class="mb-3">
+                <input placeholder="Логин" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="pad" class="mb-3">
+                <input placeholder="Пароль" type="password" class="form-control" id="exampleInputPassword1">
+                Должно быть 8-20 символов.
+              </div>
+             
+              <div class="pad" class="mb-3">
+                <input placeholder="Повторите пароль" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="pad">
+              <input  type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+            </div>
+            </div>
+            <div id="modal-footer" class="modal-footer">
+              
+              <a href="canon.html"><button id="but-buy" type="button" class="btn btn-primary">Зарегистрироваться</button></a>
+              
+          
+            </div>
+            <h6  id="enter">Уже есть аккаунт? <a href="enter.html">Войти</a></h6>
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+</body>
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+    </div>
+    <ul class="social">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Продукты</a></li>
+        <li><a href="#">Работа в Canon</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+    <p>Соболь Дарья | ИСП-2 | 2024</p>
+  </footer>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/bootstrap.js"></script>
+</html>

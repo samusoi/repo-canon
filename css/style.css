@@ -1,0 +1,579 @@
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url('../fonts/static/Raleway-Light.ttf') format('ttf'),
+        
+}
+header{
+    background-color: black;
+    font-family: 'Raleway';
+    font-size: 15pt;
+   
+}
+#logo{
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.nav-link{
+    color: aliceblue;
+    
+}
+#search{
+    float: right;
+    margin-top: -80px;
+    margin-right: 40px;
+    width: 230px;
+    
+}
+#button-search{
+    border-color:aliceblue ;
+    color: aliceblue;
+}
+.container{
+    margin: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    max-width: 100%;
+    font-family: 'Raleway';
+
+}
+
+.desc{
+    font-family: 'Raleway';
+    font-size: 20pt;
+    text-align: center;
+    
+}
+.desc1{
+    font-family: 'Raleway';
+    font-size: 25pt;
+    
+}
+.zag{
+    padding-bottom:10px ;
+    font-size: 40pt ;
+}
+
+
+.opis{
+    
+    font-size: 26pt;
+    padding-bottom: 50px;
+ 
+}
+.opis1{
+    
+    font-size: 35pt;
+    padding-bottom: 20px;
+    padding-top: 20px;
+ 
+}
+.description{
+    
+    padding: 50px;
+   
+}
+
+
+.opis3{
+    font-size: 35pt;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  
+}
+#carouselExampleCaptions{
+    padding-bottom: 30px;
+    
+}
+.card-img-top{
+    padding: 10px;
+}
+
+.card-text{
+    padding-top:20px ;
+    padding-bottom: 10px;
+    font-size: 15pt;
+}
+.card-title{
+
+    font-size: 20pt;
+}
+.ul li{
+    display:inline-block;
+    
+ }
+ .ul{
+    max-width: 100%;
+ }
+ #buy{
+    background-color: rgb(173, 27, 27);
+    border:  rgb(173, 27, 27);
+ }
+ .card2{
+    margin-left: 120px
+ }
+
+ .card3{
+    margin-left: 120px
+ }
+ .modal-header{
+    background-color: #000000;
+    color: #fff;
+    
+ }
+#but-close{
+    background-color: rgb(100, 100, 100);
+
+}
+#but-buy{
+    background-color: rgb(173, 27, 27);
+    border:  rgb(173, 27, 27);
+    
+}
+.btn-close{
+    background-color: #fff;
+}
+
+.img-kor{
+    height: 100px;
+} 
+#exampleModalLabel{
+    font-size: 50pt;
+}
+
+.foto-spis li{
+    display:inline-block;
+}
+.foto-sozd li{
+    display:inline-block;
+}
+.foto-spis-1 li{
+    display:inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.foto-1{
+    height: 310px;
+    border-radius: 2%;
+}
+
+.foto-s{
+    height: 400px;
+    padding: 30px;
+    border-radius: 2%;
+}
+.foto{
+    height: 280px;
+    border-radius: 2%;
+}
+.opis2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 23pt;
+    
+}
+ 
+#carousel-news{
+    height: 500px;
+    width: 700px;
+}
+.opis4{
+    padding-top: 15px;
+    
+    font-size: 27pt;
+}
+
+/* карточка новостей */
+
+:root {
+   
+    
+    --font-size-title: 32px;
+    --line-height-title: 1.4;
+    --font-size-caption: 14px;
+    --line-height-caption: 1.2;
+    
+    
+    --border-radius-primary:5px; 
+  }
+  
+ 
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  @mixin mediaBig {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @include mediaBig {
+    :root {
+      --font-size-title: 40px;
+    }  
+  }
+  
+  .card {
+    max-width: 100%;
+    border-radius: var(--border-radius-primary);
+    box-shadow: 24px 24px 80px rgba(0,0,0,0.1);
+    padding: 20px 20px 28px 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    @include mediaBig {
+      flex-direction: row;
+      align-items: center;
+      margin: 40px;
+      padding: 32px;
+    }
+  }
+  
+  .card__image {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: var(--border-radius-primary);
+    object-fit: cover;
+    margin-bottom: 18px;
+    
+    @include mediaBig {
+      width: 45%;
+      max-height: none;
+      min-height: 400px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .card__content {
+    @include mediaBig {
+      width: 55%;
+      padding-left: 40px;
+    }
+  }
+  
+  .card__date {
+    display: block;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-caption);
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: 6px;
+    color: rgb(173, 27, 27);
+    font-weight: bold;
+    
+    @include mediaBig {
+      margin-bottom: 8px;
+    }
+  }
+  
+  .card__title {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    color: var(--color-text);
+    box-decoration-break: clone;
+    background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+    background-size: 100% 42%;
+    background-repeat: no-repeat;
+    background-position: 0 85%;
+    padding: 0 4px;
+    margin-left: -4px;
+  }
+  
+
+
+
+/* футер: */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;/*обнуление отступов*/
+    padding: 0;/*обнуление полей*/
+    box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: Raleway;/*название шрифта*/
+}
+
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #000000;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    /* margin-top: 50px;отступ сверху */
+   
+    
+}
+.footer {
+	flex: 0 0 auto;
+    
+}
+
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}    
+
+
+
+.zoom-effect {
+    
+    height: 265px;
+    overflow: hidden;
+}
+
+#image {
+    
+    
+    transition: transform 0.5s ease;
+}
+
+#image:hover {
+    transform: scale(1.3);
+}
+
+/* кнопка вверх: */
+
+.up{
+    height: 80px;
+    padding-top: 20px;
+    float: right;
+}
+
+  
+/* Стили для блока с тестом */
+#callback {
+    width: 300px;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 30px;
+    
+    transform: translateX(-100%);
+   }
+   /* стили для абзаца */
+   #callback p {
+    color: #fff;
+    padding: 22px;
+   }
+
+   /*Стили для пседвоэлемента*/
+   #callback:after {
+    content: 'Наведи на меня';
+    background-color:rgb(173, 27, 27);
+    color: aliceblue;
+    text-align: center;
+    font-size: 10pt;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 130px; /* ширина псевдоэлемента равна высоте блока */
+    position: fixed; /* позиционирование абсолютное */
+    left: 300px; /* позиция слева равен ширине блока #callback */
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    margin-top:-35px;
+   }
+
+   #callback:hover {
+    transform: translateX(0%);
+    transition: all 0.7s ease;
+   }
+
+
+   /* аккордеоны */
+
+   .accordion-button{
+    box-shadow: 0 0 0 1px black;
+    font-size: 18pt;
+    height: 80px;
+   
+
+   }
+   .accordion{
+   margin-top: -20px;
+   }
+   .accordion-item{
+    font-size: 15pt;
+   }
+   .form-label{
+    font-size: 20pt;
+   }
+   .form-control{
+    font-size:15pt ;
+    border: solid 1px #000000;
+   }
+   .form-control:focus{
+    border:solid 2px black;
+    
+   }
+   iframe{
+    border-radius: 8px;
+    margin-top: -20px;
+   }
+   .videos li{
+    display:inline-block;
+    
+ }
+ #btn{
+    background-color: rgb(173, 27, 27);
+    border-color:  rgb(173, 27, 27);
+ }
+ .accordion-button{
+    color:  rgb(173, 27, 27);
+ }
+ .card__date{
+
+ }
+#h6{
+    float: right;
+    color: rgb(161, 161, 161);
+}
+#button{
+    border-color: rgb(173, 27, 27);
+    background-color: rgb(173, 27, 27);
+    width: 100px;
+}
+
+#h6-1{
+    text-align: left;
+}
+#modal-footer{
+    justify-content: center;
+    padding: 10px;
+}
+.form-check-input:focus{
+    box-shadow: none;
+    
+    
+}
+#enter{
+    text-align: center;
+    padding: 15px;
+    color: rgb(161, 161, 161);
+
+}
+#zagolovok-modal-window{
+    text-align: center;
+    padding: 10px;
+}
+.pad{
+    padding: 10px;
+}
+#canon-logo-wind{
+height: 30px;
+padding-left: 160px;
+padding-right: 100px;
+
+}
+.gif{
+    height: 100px;
+    padding-bottom: 10px;
+}
+.rew-cameras{
+    float: left;
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+.icon{
+    height: 35px;
+    padding-right: 10px;
+    
+}
+.stars{
+    height: 30px;
+    padding-left: 15px;
+}
+.rate{
+    padding-left: 370px;
+}
+
+.rew-dost{
+    padding-top: 20px;
+    font-size: 15pt;
+    width: 90%;
+    
+}
+.rew-nedost{
+    font-size: 15pt;
+    width: 90%;
+}
+.review{
+    padding-top: 30px;
+    
+}
+.comment{
+    font-size: 15pt;
+    width: 90%;
+}
+.rew-date{
+    float: right;
+    color:  rgb(173, 27, 27);
+}
+
+.all-review{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#review li{
+    display:inline-block;
+    list-style-type: none;
+    width: 100%;
+}
+.zag-spisok{
+    padding-top:15px ;
+    padding-bottom: 15px;
+}
+.nav-link:hover{
+color: aliceblue;
+}
+
+
+
